@@ -19,3 +19,16 @@ elif valor2 < valor1 and valor2 < valor3:
     print("o segundo produto é o mais barato")
 else:
     print("o terceiro produto é o mais barato.")
+
+atvd 4
+# Turno de estudo
+turno = input("Digite o turno que você estuda (M-matutino, V-Vespertino, N-Noturno): ").upper()
+if turno == 'M':
+    print("Bom Dia!")
+elif turno == 'V':
+    print("Boa Tarde!")
+elif turno == 'N':
+    print("Boa Noite!")
+else:
+
+    print("Valor Inválido!")
