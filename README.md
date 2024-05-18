@@ -6,7 +6,7 @@ if letra in 'aeiou'or 'AEIOU':
 else:
     print("A letra {letra} é uma consoante.")
 
-    atvd 2
+atvd 2
 # Encontrar o produto mais barato
 valor1 = float(input("Digite o preço do primeiro produto: "))
 valor2 = float(input("Digite o preço do segundo produto: "))
@@ -47,3 +47,72 @@ dias = {
 }
 else:
      print("Valor inválido!")
+
+atvd 6
+# Média e conceito de notas
+nota1 = float(input("Digite a primeira nota: "))
+nota2 = float(input("Digite a segunda nota: "))
+
+media = (nota1 + nota2) / 2
+
+if 9 <= media <= 10:
+    conceito = 'A'
+elif 7.5 <= media < 9:
+    conceito = 'B'
+elif 6 <= media < 7.5:
+    conceito = 'C'
+elif 4 <= media < 6:
+    conceito = 'D'
+else:
+    conceito = 'E'
+
+print(f"Notas: {nota1}, {nota2}")
+print(f"Média: {media}")
+print(f"Conceito: {conceito}")
+if conceito in 'ABC':
+    print("APROVADO")
+else:
+    print("REPROVADO")
+
+atvd 7
+# Ano bissexto
+ano = int(input("Digite um ano: "))
+
+if (ano % 4 == 0 and ano % 100 != 0) or (ano % 400 == 0):
+    print(f"O ano {ano} é bissexto.")
+else:
+    print(f"O ano {ano} não é bissexto.")
+
+atvd 8
+# Verificar idade
+idade = int(input("Digite a sua idade: "))
+if 0 <= idade <= 150:
+    print(f"Sua idade é {idade}")
+else:
+    print("Valor inválido!")
+
+atvd 9
+# Soma e média de 5 números
+numeros = []
+for i in range(5):
+    numero = float(input(f"Digite o {i+1}º número: "))
+    numeros.append(numero)
+
+soma = sum(numeros)
+media = soma / 5
+
+print(f"Soma: {soma}")
+print(f"Média: {media}")
+
+atvd 10
+# Verificar se um número é primo
+numero = int(input("Digite um número inteiro: "))
+if numero > 1:
+    for i in range(2, numero):
+        if numero % i == 0:
+            print(f"O número {numero} não é primo.")
+            break
+    else:
+        print(f"O número {numero} é primo.")
+else:
+    print(f"O número {numero} não é primo.")
