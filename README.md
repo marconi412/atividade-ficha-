@@ -22,7 +22,7 @@ else:
 
 atvd 4
 # Turno de estudo
-turno = input("Digite o turno que você estuda (M-matutino, V-Vespertino, N-Noturno): ").upper()
+turno = input("turno (M-matutino, V-Vespertino, N-Noturno): ").upper()
 if turno == 'M':
     print("Bom Dia!")
 elif turno == 'V':
@@ -32,3 +32,18 @@ elif turno == 'N':
 else:
 
     print("Valor Inválido!")
+
+atvd 5
+# Dia da semana
+dia = int(input("Dia da semana de acordo com um numero (1-7): "))
+dias = {
+    1: "Domingo",
+    2: "Segunda-feira",
+    3: "Terça-feira",
+    4: "Quarta-feira",
+    5: "Quinta-feira",
+    6: "Sexta-feira",
+    7: "sabado", 
+}
+else:
+     print("Valor inválido!")
