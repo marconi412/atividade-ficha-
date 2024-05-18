@@ -12,6 +12,7 @@ valor1 = float(input("Digite o preço do primeiro produto: "))
 valor2 = float(input("Digite o preço do segundo produto: "))
 valor3 = float(input("Digite o preço do terceiro produto: "))
 
+atvd3
 if valor1 < valor2 and valor1 < valor3:
     print("o primeiro produto é o mais barato.")
 elif valor2 < valor1 and valor2 < valor3:
