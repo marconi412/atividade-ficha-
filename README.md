@@ -116,3 +116,88 @@ if numero > 1:
         print(f"O número {numero} é primo.")
 else:
     print(f"O número {numero} não é primo.")
+
+atvd 11 
+#Temperaturas
+temperaturas = []
+for temp in range(5):
+    temperatura = float(input(f"Digite a {temp+1}ª temperatura: "))
+    temperaturas.append(temperatura)
+
+maior_temp = max(temperaturas)
+menor_temp = min(temperaturas)
+media_temp = sum(temperaturas) / len(temperaturas)
+
+print(f"Maior temperatura: {maior_temp}")
+print(f"Menor temperatura: {menor_temp}")
+print(f"Média das temperaturas: {media_temp}")
+
+atvd 12
+# Crédito especial
+saldo_medio = float(input("saldo médio do último ano: "))
+
+if saldo_medio <= 200:
+    credito = 0
+elif 201 <= saldo_medio <= 400:
+    credito = saldo_medio * 0.2
+elif 401 <= saldo_medio <= 600:
+    credito = saldo_medio * 0.3
+else:
+    credito = saldo_medio * 0.4
+
+print(f"Saldo médio: {saldo_medio}")
+print(f"Valor do crédito: {credito}")
+
+atvd 13
+from datetime import datetime
+
+# Obtendo informações do usuário
+nome = input("Digite seu nome: ")
+idade = int(input("Digite sua idade: "))
+
+# Calculando o ano de aposentadoria
+ano_atual = datetime.now().year
+idade_aposentadoria = 65
+ano_aposentadoria = ano_atual + (idade_aposentadoria - idade)
+
+# Criando a mensagem de aposentadoria
+mensagem_aposentadoria = f"Olá, {nome}! Com base na sua idade, você poderá se aposentar no ano de {ano_aposentadoria}."
+
+# Exibindo a mensagem
+print(mensagem_aposentadoria)
+
+atvd 14 
+# Obtendo informações do usuário
+valor_hora = float(input("Digite o valor da sua hora de trabalho: "))
+horas_trabalhadas = float(input("Digite a quantidade de horas trabalhadas no mês: "))
+
+# Calculando o salário bruto
+salario_bruto = valor_hora * horas_trabalhadas
+
+# Calculando o desconto do Imposto de Renda
+if salario_bruto <= 2112:
+    desconto_ir = 0
+elif salario_bruto <= 2826.65:
+    desconto_ir = salario_bruto * 0.075
+elif salario_bruto <= 3751.05:
+    desconto_ir = salario_bruto * 0.15
+elif salario_bruto <= 4664.68:
+    desconto_ir = salario_bruto * 0.225
+else:
+    desconto_ir = salario_bruto * 0.275
+
+# Calculando o desconto do Sindicato
+desconto_sindicato = salario_bruto * 0.03
+
+# Calculando o FGTS
+fgts = salario_bruto * 0.11
+
+# Calculando o salário líquido
+salario_liquido = salario_bruto - desconto_ir - desconto_sindicato
+
+# Exibindo os resultados
+print(f"Salário Bruto: R$ {salario_bruto:.2f}")
+print(f"(-) Desconto do Imposto de Renda: R$ {desconto_ir:.2f}")
+print(f"(-) Desconto do Sindicato: R$ {desconto_sindicato:.2f}")
+print(f"FGTS (não descontado): R$ {fgts:.2f}")
+print(f"Salário Líquido: R$ {salario_liquido:.2f}")
